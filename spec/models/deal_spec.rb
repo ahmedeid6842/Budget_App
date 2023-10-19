@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe Deal, type: :model do
   before :each do
-    @user = User.new(name: "Kero", email: "Kero@gmail.com", password: "123456")
+    @user = User.new(name: "ahmed", email: "ahmed@gmail.com", password: "123456")
     @deal = Deal.new(name: "deal 1", amount: 1)
   end
 
