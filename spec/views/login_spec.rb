@@ -16,13 +16,13 @@ RSpec.describe "Log In page", type: :feature do
   end
 
   it "should see the login button" do
-    expect(page).to have_button "Log In"
+    expect(page).to have_button "Log in"
   end
 
   it "should be able to see authenticated route" do
     fill_in "Email", with: @user1.email
     fill_in "Password", with: @user1.password
-    click_button "Log In"
+    click_button "Log in"
     expect(page).to have_content("CATEGORIES")
   end
 end
