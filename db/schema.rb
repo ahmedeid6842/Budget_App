@@ -10,14 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_18_085532) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_19_024538) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "deals", force: :cascade do |t|
     t.string "name", null: false
-    t.string "amount", default: "0", null: false
     t.integer "author_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "amount"
+  end
+
+  create_table "group_deals", force: :cascade do |t|
+    t.integer "group_id"
+    t.integer "deal_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,9 +33,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_18_085532) do
     t.string "name", null: false
     t.string "icon"
     t.integer "author_id", null: false
-    t.integer "deal_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "total_deals"
   end
 
   create_table "users", force: :cascade do |t|
@@ -45,5 +52,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_18_085532) do
   end
 
   add_foreign_key "deals", "users", column: "author_id", on_delete: :cascade
-  add_foreign_key "groups", "deals", on_delete: :cascade
+  add_foreign_key "group_deals", "deals"
+  add_foreign_key "group_deals", "groups"
 end
