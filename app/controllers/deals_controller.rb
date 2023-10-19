@@ -16,9 +16,9 @@ class DealsController < ApplicationController
     if @deal.save
       @group_deal = GroupDeal.new(group_id: params[:groups], deal_id: @deal.id)
       @group_deal.save
-      redirect_to group_deals_path(group_id: params[:groups]), notice: "Deal has been created successfully!"
+      redirect_to group_deals_path(group_id: params[:groups]), notice: 'Deal has been created successfully!'
     else
-      flash[:alert] = "Something went wrong, Try again!"
+      flash[:alert] = 'Something went wrong, Try again!'
       render :new
     end
   end

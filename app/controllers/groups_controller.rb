@@ -13,9 +13,9 @@ class GroupsController < ApplicationController
     @group = current_user.groups.new(group_params)
 
     if @group.save
-      redirect_to groups_path, notice: "Category has been created!"
+      redirect_to groups_path, notice: 'Category has been created!'
     else
-      flash[:alert] = "Something went wrong, Try again!"
+      flash[:alert] = 'Something went wrong, Try again!'
       render :new
     end
   end
