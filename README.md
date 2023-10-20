@@ -12,13 +12,13 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Run tests](#tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -66,6 +66,10 @@ The Budget App is a mobile web application where you can manage your budget: you
     <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
   </ul>
 </details>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://budget-app-microverse-79ca66bb0c60.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
