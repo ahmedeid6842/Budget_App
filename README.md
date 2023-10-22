@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+ح<a name="readme-top"></a>
 
 <div align="center">
   <h3><b>Budget App</b></h3>
@@ -165,6 +165,7 @@ bundle exec rspec
 - [x] **Show Budgets by users**
 - [x] **Show Public Budgets**
 - [x] **Like Budget and Deals**
+- [x] **Enhance UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
